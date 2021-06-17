@@ -1,9 +1,9 @@
 const mysql = require('mysql');
 const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'user',
-  password: 'password',
-  database: 'database name'
+  host: 'freedb.tech',
+  user: 'freedbtech_geraldy',
+  password: 'dbpassword',
+  database: 'freedbtech_apiRequest'
 });
 connection.connect((err) => {
   if (err) throw err;

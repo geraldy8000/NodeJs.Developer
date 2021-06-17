@@ -1,0 +1,13 @@
+const env = process.env;
+
+const config = {
+  db: { /* don't expose password or any sensitive info, done only for demo */
+    host: 'freedb.tech',
+    user: 'freedbtech_geraldy',
+    password: 'dbpassword',
+    database: 'freedbtech_apiRequest'
+  }
+};
+
+
+module.exports = config;
