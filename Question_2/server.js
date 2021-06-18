@@ -76,6 +76,8 @@ app.get("/detail", (req, res) => {
 
 
 var port_number = Number(process.env.PORT || 3000);
-app.listen(port_number, () => {
+var server = app.listen(port_number, () => {
   console.log("Server is running on port "+ port_number + " .");
 });
+
+module.exports = server;
