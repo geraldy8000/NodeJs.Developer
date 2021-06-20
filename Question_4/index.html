@@ -11,7 +11,6 @@
             while(arrayString.length > 0) {
                 let init = arrayString[0].split('').sort().join('');
                 var group = [];
-                console.log(init);
                 group.push(arrayString[0]);
                 arrayString.splice(0, 1);
                 for(var x = 0; x < arrayString.length; x++) {
@@ -21,14 +20,12 @@
                       group.push(arrayString[x]);
                       arrayString.splice(x, 1);
                       x--;
-                      console.log("Found");
                     } 
 
                 }
                 res.push(group);
                 group = [];
             }
-            console.log(input.toString());
             alert("Input: " + JSON.stringify(input) + "\nOutput: " + JSON.stringify(res));
 
         }
