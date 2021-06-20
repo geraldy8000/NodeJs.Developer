@@ -5,7 +5,7 @@
     <script type="text/javascript">
         function getAnagram() {
             var arrayString = ['kita', 'atik', 'tika', 'aku', 'kia', 'makan', 'kua'];
-
+            var input = ['kita', 'atik', 'tika', 'aku', 'kia', 'makan', 'kua'];
 
             var res = [];
             while(arrayString.length > 0) {
@@ -28,7 +28,8 @@
                 res.push(group);
                 group = [];
             }
-            console.log(res);
+            console.log(input.toString());
+            alert("Input: " + JSON.stringify(input) + "\nOutput: " + JSON.stringify(res));
 
         }
         window.onload = getAnagram();

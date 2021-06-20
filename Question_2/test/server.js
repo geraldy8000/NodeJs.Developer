@@ -5,11 +5,15 @@ let chaiHttp = require("chai-http");
 chai.should();
 chai.use(chaiHttp);
 
-describe('Task APIs', () => {
-	describe('Task Get / routes', () => {
-		it('It should return all task', (done) => {
+describe('Testing API', () => {
+	describe('Get /search routes', () => {
+		it('Testing', (done) => {
 			chai.request(server)
-				.get("/")
+				.get("/search")
+				.query({
+                    query: "batman",
+                    page: 1
+                 })
 				.end((err, response) => {
 					response.should.have.status(200);
 				done();
@@ -17,5 +21,21 @@ describe('Task APIs', () => {
 		});
 
 	});
+
+	describe('Get /details routes', () => {
+		it('Testing', (done) => {
+			chai.request(server)
+				.get("/detail")
+				.query({
+                    title: "superman"
+                 })
+				.end((err, response) => {
+					response.should.have.status(200);
+				done();
+				});
+		});
+
+	});
+
 
 });
