@@ -8,16 +8,25 @@ Question 2:
 
 - Running locally:
   On root directory of Question_2, run:
+  ```
   node server.js
+  ```
+
 
 - Database access: 
   https://freedb.tech/phpmyadmin/sql.php
+  ```
   Username: freedbtech_geraldy
   Password: dbpassword
+  ```
+
 
 - Run unit test:
   On root directory of Question_2, run:
+  ```
   npm test
+  ```
+
 
 Question 3:
 - Updated script available on index.js file
